@@ -16,7 +16,8 @@
     ],
     "intro": {
       "text": "intro.md",
-      "code": "localInstall.sh",
+      "courseData": "backgroundInstall.sh",
+      "code": "foregroundInstall.sh",
       "credits": ""
     },
     "finish": {
