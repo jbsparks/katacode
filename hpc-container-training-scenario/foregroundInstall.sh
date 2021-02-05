@@ -7,8 +7,8 @@ echo "install singularity..."
 # Install singualrity
 mkdir /downloads
 cd /downloads
-wget https://dl.google.com/go/go1.13.7.linux-amd64.tar.gz
-tar -C /usr/local -zxvf go1.13.7.linux-amd64.tar.gz
+wget https://dl.google.com/go/go1.15.8.linux-amd64.tar.gz
+tar -C /usr/local -zxvf go1.15.8.linux-amd64.tar.gz
 
 #/bin/bash
 echo "export GOROOT=/usr/local/go" >> /etc/profile.d/go.sh
