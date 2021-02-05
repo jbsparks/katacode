@@ -12,6 +12,11 @@ sudo apt-get -y install podman
 apt-get install build-essential libssl-dev uuid-dev libgpgme11-dev 
 apt-get install squashfs-tools libseccomp-dev pkg-config
 
+
+docker --version
+podman --version
+
+# Install singualrity
 mkdir /downloads
 cd /downloads
 wget https://dl.google.com/go/go1.13.7.linux-amd64.tar.gz
