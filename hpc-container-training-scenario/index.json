@@ -1,6 +1,6 @@
 {
   "title": "HPC Container Training using Jupyter Notebooks",
-  "description": "A taining scenario for HPC containers. You will have access to a Jupyter Scipy Notebook based on the jupyter/scipy-notebook image. You can create and load and run notebooks.",
+  "description": "A taining scenario for HPC containers. You will have access to a Jupyter Notebook image. You can create and load and run notebooks.",
   "difficulty": "expert",
   "time": "1 hour (to get going)",
   "details": {
@@ -16,6 +16,7 @@
     ],
     "intro": {
       "text": "intro.md",
+      "code": "localInstall.sh",
       "credits": ""
     },
     "finish": {

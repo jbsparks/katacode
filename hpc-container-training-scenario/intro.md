@@ -1,6 +1,6 @@
 In this scenario, you will run a Jupyter Notebook in a Docker Container.
 
-The underlying Docker Container Image is jupyter/scipy-notebook. It contains these contents:
+The underlying Ubuntu Container Image. It contains the following contents:
 * Minimally-functional Jupyter Notebook server (e.g., no pandoc for saving notebooks as PDFs)
 * Miniconda Python 3.x in /opt/conda
 * Pandoc and TeX Live for notebook document conversion
