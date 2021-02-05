@@ -1,4 +1,8 @@
 #!/bin/bash
+
+echo "Waiting background script to complete"; while [ ! -f /opt/.backgroundfinished ] ; do sleep 2; done; echo "Done"
+
+
 echo "install singularity..."
 # Install singualrity
 mkdir /downloads
