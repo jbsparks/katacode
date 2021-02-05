@@ -20,14 +20,10 @@ source /etc/profile.go.sh
 env | grep -E "(ROOT|PATH)"
 go version
 
-go get -u github.com/golang/dep/cmd/dep
-go get -d github.com/sylabs/singularity
-
-cd $GOPATH/src/github.com/sylabs/singularity
-git fetch
-git checkout 
+wget https://github.com/singularityware/singularity/releases/download/v3.5.3/singularity-3.5.3.tar.gz
+tar -xzvf singularity-3.5.3.tar.gz
+cd singularity
 ./mconfig
 make -C ./builddir
 make -C ./builddir install
-
 singularity version 
