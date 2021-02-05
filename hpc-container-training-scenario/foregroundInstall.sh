@@ -26,4 +26,10 @@ cd singularity
 ./mconfig
 make -C ./builddir
 make -C ./builddir install
+
+echo "Build contains docker, podman and singularity"
+docker --version
+podman --version
 singularity version 
+
+
