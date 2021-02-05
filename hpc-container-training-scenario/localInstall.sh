@@ -5,17 +5,17 @@ echo "Installing prerequisit container runtime alternates, podman and singularit
 . /etc/os-release
 echo "deb https://download.opensuse.org/repositories/devel:/kubic:/libcontainers:/stable/xUbuntu_${VERSION_ID}/ /" | sudo tee /etc/apt/sources.list.d/devel:kubic:libcontainers:stable.list
 curl -L https://download.opensuse.org/repositories/devel:/kubic:/libcontainers:/stable/xUbuntu_${VERSION_ID}/Release.key | sudo apt-key add -
-sudo apt-get update
-sudo apt-get -y upgrade
-sudo apt-get -y install podman
+apt-get update
+apt-get install -y podman
 
-apt-get install build-essential libssl-dev uuid-dev libgpgme11-dev 
-apt-get install squashfs-tools libseccomp-dev pkg-config
+apt-get install -y build-essential libssl-dev uuid-dev libgpgme11-dev 
+apt-get install -y squashfs-tools libseccomp-dev pkg-config
 
-
+echo "get intsalled versions of docker and podman..."
 docker --version
 podman --version
 
+echo "install singularity..."
 # Install singualrity
 mkdir /downloads
 cd /downloads
