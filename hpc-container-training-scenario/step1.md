@@ -8,4 +8,5 @@ Jupyter lab install
 
 Run the Jupyter Notebook container image:
 
-`jupyter-lab --allow-root --port=8888 --expose-app-in-browser`{{execute}}
+#`jupyter-lab --allow-root --port=8888 --expose-app-in-browser`{{execute}}
+`jupyter-lab --allow-root --port=8888  --no-browser`{{execute}}
