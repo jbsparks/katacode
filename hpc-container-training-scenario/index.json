@@ -1,5 +1,6 @@
 {
-  "title": "HPC Container Training using Jupyter Notebooks",
+  "pathwayTitle": "An introduction to HPC containers",
+  "title": "WORK IN PROGRESS - HPC Container Training using Jupyter Notebooks",
   "description": "A taining scenario for HPC containers. You will have access to a Jupyter Notebook image. You can create and load and run notebooks.",
   "difficulty": "expert",
   "time": "1 hour (to get going)",
