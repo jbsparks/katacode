@@ -1,7 +1,7 @@
 {
   "pathwayTitle": "An introduction to HPC containers",
   "title": "WORK IN PROGRESS - HPC Container Training using Jupyter Notebooks",
-  "description": "A taining scenario for HPC containers. You will have access to a Jupyter Notebook image. You can create and load and run notebooks.",
+  "description": "A training scenario for HPC containers. You will have access to a Jupyter Notebook image. You can create and load and run notebooks.",
   "difficulty": "expert",
   "time": "1 hour (to get going)",
   "details": {
@@ -43,7 +43,7 @@
     "dashboards": [
       {
         "name": "Jupyter Notebook",
-        "port": 8888
+        "port": 9888
       }
     ],
     "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\n"

@@ -28,6 +28,7 @@ make -C ./builddir
 make -C ./builddir install
 
 echo "Build contains docker, podman and singularity"
+cd
 docker --version
 podman --version
 singularity version 
