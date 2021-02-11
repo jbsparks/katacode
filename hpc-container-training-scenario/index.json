@@ -38,14 +38,22 @@
     }
   },
   "environment": {
-    "uilayout": "terminal-iframe",
     "showdashboard": true,
     "dashboards": [
       {
-        "name": "Jupyter Notebook",
+        "name": "URL",
+        "href": "https://www.katacoda.com"
+      },
+      {
+        "name": "Port 9888",
         "port": 9888
+      },
+      {
+        "name": "Placeholder",
+        "href": "https://[[HOST_SUBDOMAIN]]-9888-[[KATACODA_HOST]].environments.katacoda.com"
       }
     ],
+    "uilayout": "terminal-iframe",
     "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\n"
   },
   "backend": {
