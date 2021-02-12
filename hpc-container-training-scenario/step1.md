@@ -15,5 +15,5 @@ Seems you have to do this all the time ...
 
 Run the Jupyter Notebook container image:
 
-`jupyter-lab --allow-root --port=9888 --notebook-dir=. --no-browser`{{execute}}
+`jupyter-lab --allow-root --port=9888 --notebook-dir=. --ip='*' --no-browser`{{execute}}
 
