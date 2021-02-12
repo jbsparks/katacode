@@ -1,0 +1,17 @@
+FROM nvidia/cuda:9.0-devel-centos7
+
+# GNU compiler
+RUN yum install -y \
+        gcc \
+        gcc-c++ \
+        gcc-gfortran && \
+    rm -rf /var/cache/yum/*
+
+FROM nvidia/cuda:9.0-base-centos7
+
+# GNU compiler runtime
+RUN yum install -y \
+        libgfortran \
+        libgomp && \
+    rm -rf /var/cache/yum/*
+

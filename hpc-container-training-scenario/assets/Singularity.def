@@ -1,0 +1,19 @@
+# Start from a basic Ubuntu 16.04 image
+BootStrap: docker
+From: ubuntu:16.04
+
+%files
+    # Copy Hello World source code into the container image
+    ./hello.c /usr/local/src/hello.c
+
+%post
+    # Install the necessary development environment
+    apt-get update -y
+    apt-get install -y --no-install-recommends \
+        build-essential \
+        gcc
+    rm -rf /var/lib/apt/lists/*
+
+    # Build Hello World
+    ls -l /usr/local/src
+    gcc -o /usr/local/bin/hello /usr/local/src/hello.c
